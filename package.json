@@ -2,7 +2,7 @@
   "name": "vue-cli-learn",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "Sanket Sonvane <2235668+sanketss84@users.noreply.github.com>",
+  "author": "Sanket Sonvane",
   "license": "MIT",
   "private": true,
   "scripts": {
