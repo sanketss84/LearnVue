@@ -4,6 +4,7 @@
         <p>I'm an awesome User!</p>
         <button @click="changeName">Change My Name</button>
         <p>Name is: {{name}}</p>
+        <p>Age is: {{age}}</p>
         <hr>
         <div class="row">
             <div class="col-xs-12 col-sm-6">
@@ -12,10 +13,16 @@
                 <app-user-detail 
                     :username="name" 
                     @nameWasReset="name = $event"
-                    :resetFn="resetName"></app-user-detail>
+                    :resetFn="resetName"
+                    :userAge="age"></app-user-detail>
             </div>
             <div class="col-xs-12 col-sm-6">
-                <app-user-edit></app-user-edit>
+                <app-user-edit 
+                :userAge="age"
+                @ageWasEdited="age = $event"                
+                :editAgeFn="editAge"
+                @ageWasEditedEventBus="age = $event"            
+                ></app-user-edit>
             </div>
         </div>
     </div>
@@ -24,11 +31,12 @@
 <script>
     import UserDetail from './UserDetail.vue';
     import UserEdit from './UserEdit.vue';
-
+    
     export default {
         data : function (){
             return {
-                name : 'Ramesh'
+                name : 'Ramesh',
+                age : 27
             };
         },
         methods : {
@@ -36,7 +44,10 @@
                 this.name = 'Suresh';
             },
             resetName (){
-                this.name = 'Ramesh';
+                this.name = 'Ramesh'; //callback approach
+            },
+            editAge () {
+                this.age = 31; //callback approach
             }
         },
         components: {
