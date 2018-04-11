@@ -1,21 +1,24 @@
+// note template should always have one root element that is div here 
 <template>
   <div id="app">
+    <app-header></app-header>
     <h1>Hello World</h1>
-    <img src="./assets/logo.png">
-    <h3>{{ msg }}</h3>
-
+    <app-servers></app-servers>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
+import Header from './components/shared/Header.vue'
+import Footer from './components/shared/Footer.vue'
+import Servers from './components/server/Servers.vue'
 export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-    // We can use methods, computed here as well
+  components : {
+    'app-header' : Header,
+    'app-footer' : Footer,
+    'app-servers': Servers
   }
+
 }
 </script>
 
