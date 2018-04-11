@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-primary">
       <h3>{{header}}</h3>
   </div>
 </template>

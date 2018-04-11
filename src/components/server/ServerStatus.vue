@@ -24,3 +24,9 @@
         }
     }
 </script>
+
+<style scoped>
+    p {
+        border : 1px solid red;
+    }
+</style>

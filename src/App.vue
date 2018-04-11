@@ -1,8 +1,10 @@
 // note template should always have one root element that is div here 
+// https://vuejs.org/v2/guide/components.html
 <template>
   <div id="app">
     <app-header></app-header>
     <h1>Hello World</h1>
+    <!-- <img src="./assets/logo.png" alt=""> works -->
     <app-servers></app-servers>
     <app-footer></app-footer>
   </div>
@@ -22,6 +24,7 @@ export default {
 }
 </script>
 
+//by default this style will be applied globally 
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -35,4 +38,9 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
+</style>
+
+//if you want to restrict the style to the current component then use the scoped keyword
+<style scoped>
+
 </style>

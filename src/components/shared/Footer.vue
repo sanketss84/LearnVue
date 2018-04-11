@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-info">
       <h3>{{footer}}</h3>
   </div>
 </template>

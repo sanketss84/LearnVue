@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-// import Home from './Home.vue'
+// import Servers from './components/server/Servers.vue'
 
-//global component
-// Vue.component('app-servers', Home);
+// global component , these are accessible to any components template 
+// Vue.component('app-servers', Servers);
 
 new Vue({
   el: '#app',
