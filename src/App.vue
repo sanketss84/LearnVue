@@ -11,12 +11,16 @@
     <!-- Section 7 Ends -->
 
     <!-- Section 8 Starts -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-xs-12">
           <app-user></app-user>
       </div>
-    </div>
+    </div> -->
     <!-- Section 8 Ends -->
+
+    <!-- Section 11 Starts  -->
+    <app-form></app-form>
+    <!-- Section 11 Ends -->
     
     <app-footer></app-footer>
   </div>
@@ -27,13 +31,15 @@ import Header from './components/shared/Header.vue'
 import Footer from './components/shared/Footer.vue'
 import Servers from './components/server/Servers.vue'
 import User from './components/user/User.vue';
+import Forms from './components/forms/Forms.vue';
 
 export default {
   components : {
     'app-header' : Header,
     'app-footer' : Footer,
     'app-servers': Servers,
-    appUser: User //same as app-user
+    appUser: User, //same as app-user
+    'app-form' : Forms
   }
 
 }
