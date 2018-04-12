@@ -1,6 +1,6 @@
 # vue-cli-learn
 
-> A Vue.js project
+> A Vue.js project built using webpack-simple with scss support
 
 ## Build Setup
 
@@ -18,8 +18,13 @@ npm run build
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## read more and helpful links
-Vue
 - [Vue Components](https://vuejs.org/v2/guide/components.html)
-
-Bootstrap
 - [Bootstrap 3 Overview](https://getbootstrap.com/docs/3.3/css/#overview)
+
+## Addons Required
+- [vue-resource](https://github.com/pagekit/vue-resource) npm install vue-resource --save
+- [axios](https://github.com/axios/axios) npm install axios --save
+- [VeeValidate](https://monterail.github.io/vuelidate/#getting-started) npm install vee-validate --save
+- [Vuelidate](https://vee-validate.logaretm.com/) npm install vuelidate --save
+- [vuejs-datepicker](https://github.com/charliekassel/vuejs-datepicker) npm install vuejs-datepicker --save
+

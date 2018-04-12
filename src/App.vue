@@ -19,8 +19,12 @@
     <!-- Section 8 Ends -->
 
     <!-- Section 11 Starts  -->
-    <app-form></app-form>
+    <!-- <app-form></app-form> -->
     <!-- Section 11 Ends -->
+
+     <!-- Section 15 Starts  -->
+    <app-vres></app-vres>
+    <!-- Section 15 Ends -->
     
     <app-footer></app-footer>
   </div>
@@ -32,6 +36,7 @@ import Footer from './components/shared/Footer.vue'
 import Servers from './components/server/Servers.vue'
 import User from './components/user/User.vue';
 import Forms from './components/forms/Forms.vue';
+import vRes from './components/http/VueResourceCode';
 
 export default {
   components : {
@@ -39,7 +44,8 @@ export default {
     'app-footer' : Footer,
     'app-servers': Servers,
     appUser: User, //same as app-user
-    'app-form' : Forms
+    'app-form' : Forms,
+    'app-vres' : vRes
   }
 
 }

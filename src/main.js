@@ -1,6 +1,11 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import VueResource from 'vue-resource';
+import App from './App.vue';
 // import Servers from './components/server/Servers.vue'
+
+//Vue Resource configuration
+Vue.use(VueResource);
+Vue.http.options.root = 'https://vuejs-http-4aa7a.firebaseio.com/';
 
 // global component , these are accessible to any components template 
 // Vue.component('app-servers', Servers);
