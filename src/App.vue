@@ -4,6 +4,28 @@
   <div id="app">
     <app-header></app-header>
     
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#basics">Basics</a></li>
+      <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+      <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="basics" class="tab-pane fade in active">
+        <!-- Section 5 Starts  -->
+        <app-vbasic></app-vbasic>
+        <!-- Section 5 Ends -->
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Some content in menu 1.</p>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h3>Menu 2</h3>
+        <p>Some content in menu 2.</p>
+      </div>
+    </div>
+
     <!-- Section 7 Starts -->
     <!-- <h1>Hello World</h1> -->
     <!-- <img src="./assets/logo.png" alt=""> works -->
@@ -23,7 +45,7 @@
     <!-- Section 11 Ends -->
 
      <!-- Section 15 Starts  -->
-    <app-vres></app-vres>
+    <!-- <app-vres></app-vres> -->
     <!-- Section 15 Ends -->
     
     <app-footer></app-footer>
@@ -37,6 +59,7 @@ import Servers from './components/server/Servers.vue'
 import User from './components/user/User.vue';
 import Forms from './components/forms/Forms.vue';
 import vRes from './components/http/VueResourceCode';
+import vBasic from './components/basics/VueInstance.vue';
 
 export default {
   components : {
@@ -45,7 +68,8 @@ export default {
     'app-servers': Servers,
     appUser: User, //same as app-user
     'app-form' : Forms,
-    'app-vres' : vRes
+    'app-vres' : vRes,
+    'app-vbasic' : vBasic
   }
 
 }

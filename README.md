@@ -22,6 +22,9 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 - [Bootstrap 3 Overview](https://getbootstrap.com/docs/3.3/css/#overview)
 
 ## Addons Required
+- [Bootstrap 3](http://getbootstrap.com/docs/3.3/) added to index.html
+- [FontAwesome](https://fontawesome.com/get-started) added to index.html
+- [VueFontAwesome](https://www.npmjs.com/package/@fortawesome/vue-fontawesome) check
 - [vue-resource](https://github.com/pagekit/vue-resource) npm install vue-resource --save
 - [axios](https://github.com/axios/axios) npm install axios --save
 - [VeeValidate](https://monterail.github.io/vuelidate/#getting-started) npm install vee-validate --save
