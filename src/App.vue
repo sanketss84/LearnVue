@@ -4,17 +4,16 @@
   <div id="app">
     <app-header></app-header>
     
-    <ul class="nav nav-tabs">
+    <!-- Bootstrap Tabs Header  -->
+    <!-- <ul class="nav nav-tabs">
       <li class="active"><a data-toggle="tab" href="#basics">Basics</a></li>
       <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
       <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-    </ul>
+    </ul> -->
 
-    <div class="tab-content">
+    <!-- Bootstrap Tabs Body  -->
+    <!-- <div class="tab-content">
       <div id="basics" class="tab-pane fade in active">
-        <!-- Section 5 Starts  -->
-        <app-vbasic></app-vbasic>
-        <!-- Section 5 Ends -->
       </div>
       <div id="menu1" class="tab-pane fade">
         <h3>Menu 1</h3>
@@ -24,7 +23,11 @@
         <h3>Menu 2</h3>
         <p>Some content in menu 2.</p>
       </div>
-    </div>
+    </div> -->
+
+    <!-- Section 5 Starts  -->
+    <!-- <app-vbasic></app-vbasic> -->
+    <!-- Section 5 Ends -->
 
     <!-- Section 7 Starts -->
     <!-- <h1>Hello World</h1> -->
@@ -48,6 +51,10 @@
     <!-- <app-vres></app-vres> -->
     <!-- Section 15 Ends -->
     
+    <!-- Section 17 Starts  -->
+    <app-vuex></app-vuex>
+    <!-- Section 17 Ends -->
+
     <app-footer></app-footer>
   </div>
 </template>
@@ -60,6 +67,7 @@ import User from './components/user/User.vue';
 import Forms from './components/forms/Forms.vue';
 import vRes from './components/http/VueResourceCode';
 import vBasic from './components/basics/VueInstance.vue';
+import vVuex from './components/statemanagement/VuexCode.vue'
 
 export default {
   components : {
@@ -69,7 +77,8 @@ export default {
     appUser: User, //same as app-user
     'app-form' : Forms,
     'app-vres' : vRes,
-    'app-vbasic' : vBasic
+    'app-vbasic' : vBasic,
+    'app-vuex' : vVuex
   }
 
 }
