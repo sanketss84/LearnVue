@@ -3,6 +3,9 @@ import VueResource from 'vue-resource';
 import App from './App.vue';
 // import Servers from './components/server/Servers.vue'
 
+//vuex
+import {store} from './store/store';
+
 //Vue Resource configuration
 Vue.use(VueResource);
 Vue.http.options.root = 'https://vuejs-http-4aa7a.firebaseio.com/';
@@ -27,5 +30,7 @@ export const eventBus = new Vue({
 
 new Vue({
   el: '#app',
+  //store : store, //since key and value are the same using ES6 we can have it just as 'store'
+  store,
   render: h => h(App)
 })

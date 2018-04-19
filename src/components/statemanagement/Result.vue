@@ -4,6 +4,11 @@
 
 <script>
     export default {
-        props: ['counter']
+        // props: ['counter'] //old way
+        computed : {
+            counter () {
+                return this.$store.state.counter;
+            }
+        }
     }
 </script>
