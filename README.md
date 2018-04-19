@@ -30,4 +30,5 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 - [VeeValidate](https://monterail.github.io/vuelidate/#getting-started) npm install vee-validate --save
 - [Vuelidate](https://vee-validate.logaretm.com/) npm install vuelidate --save
 - [vuejs-datepicker](https://github.com/charliekassel/vuejs-datepicker) npm install vuejs-datepicker --save
+- [vuex](https://vuex.vuejs.org/en/) npm install vuex --save
 
