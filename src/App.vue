@@ -52,8 +52,11 @@
     <!-- Section 15 Ends -->
     
     <!-- Section 17 Starts  -->
-    <app-vuex></app-vuex>
+    <!-- <app-vuex></app-vuex> -->
     <!-- Section 17 Ends -->
+
+    <!-- Misc -->
+    <app-vdraggable></app-vdraggable>
 
     <app-footer></app-footer>
   </div>
@@ -68,6 +71,7 @@ import Forms from './components/forms/Forms.vue';
 import vRes from './components/http/VueResourceCode';
 import vBasic from './components/basics/VueInstance.vue';
 import vVuex from './components/statemanagement/VuexCode.vue'
+import vDraggable from './components/dragdropresize/DragDropresize.vue'
 
 export default {
   components : {
@@ -78,7 +82,8 @@ export default {
     'app-form' : Forms,
     'app-vres' : vRes,
     'app-vbasic' : vBasic,
-    'app-vuex' : vVuex
+    'app-vuex' : vVuex,
+    'app-vdraggable' : vDraggable
   }
 
 }
