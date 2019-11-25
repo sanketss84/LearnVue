@@ -44,7 +44,7 @@
     <!-- Section 8 Ends -->
 
     <!-- Section 11 Starts  -->
-    <!-- <app-form></app-form> -->
+    <app-form></app-form>
     <!-- Section 11 Ends -->
 
      <!-- Section 15 Starts  -->
@@ -74,7 +74,7 @@ export default {
     'app-header' : Header,
     'app-footer' : Footer,
     'app-servers': Servers,
-    appUser: User, //same as app-user
+    'appUser': User, //same as app-user
     'app-form' : Forms,
     'app-vres' : vRes,
     'app-vbasic' : vBasic,
